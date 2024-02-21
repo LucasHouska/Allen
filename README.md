@@ -1,6 +1,8 @@
 # Allen
 My First Chatbot
 
+## Setup
+
 1. Create a virtual environment
 
 **MacOS/Linux**:
@@ -39,3 +41,12 @@ OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
 5. Start the app
 
 `streamlit run main.py`
+
+### In case of self-signed certificate errors due to security
+```
+python -c "import certifi; print(certifi.where())"
+```
+and then
+```
+cat /path/to/cert >> /path/generated/from/line/above
+```
